@@ -1,0 +1,114 @@
+body{
+  background-color: rgb(234,237,237);
+  align-items: center;
+}
+.home{
+  max-width:1500px;
+}
+.product_price{
+  margin-bottom: 5px;
+}
+
+.home_img{
+  width:100%;
+  z-index: -1;
+  margin-bottom: -150px;
+}
+.productsingle{
+  display: flex;
+  flex-direction: column;
+  background-color: white !important;
+  margin: 20px;
+  padding: 20px;
+  background-color: blue ;
+  max-height: 600px;
+  min-width: 200px;
+  width:100%;
+}
+.btnn{
+  background-color: orange;
+  border: 1px solid;
+  width: 50%;
+  object-fit: contain;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.product_img{
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 5px;
+  max-height: 200px;
+}
+.product{
+  display: flex;
+  z-index: 1;
+  margin:20px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.btt{
+  align-items: center;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
+}
+.caraousel_background{
+  background-color: white;
+  margin: 20px;
+}
+.caraouselbtn{
+  background-color: white;
+  padding: 35px 20px 35px 20px;
+  margin: 10px;
+}
+.caraousel_btnprev{
+  background-color: white !important;
+  box-shadow: 5px black;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.caraousel_btnfor{
+  background-color: white !important;
+  box-shadow: 5px black;
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.body_footer{
+  text-align: center;
+  display: block;
+ padding: 20px 0;
+ margin-top: 10px;
+ line-height: 19px;
+ font-size: 1.4rem;
+ color: #004B91;
+ background-color:#37475A;
+}
+.body_footer:hover{
+  background-color: #004B91;
+}
+.body_footer > a{
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width:700px)
+{
+  .product{
+    flex-direction: column;
+    width: 100%;
+  }
+  .productsingle{
+    max-height: 600px;
+    max-width: 500px !important;
+      width:100%;
+      margin: 30px;
+      margin-right: 50px;
+    padding: 20px;
+  }
+}
+h3{
+  margin-left: 10px;
+  margin-bottom: 20px;
+}

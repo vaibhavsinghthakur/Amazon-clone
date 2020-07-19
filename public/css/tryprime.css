@@ -1,0 +1,102 @@
+body{
+  background-color: white;
+}
+.tryprimefirst{
+  display: flex;
+  margin: 20px;
+}
+.tryprimefirst > img{
+  width: 100%;
+}
+.tryprime_elements{
+    background: -webkit-radial-gradient(center, circle farthest-corner, #527CA8 0%, #344F6B 100%);
+    color:white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.tryprime_elements > strong{
+  margin: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.tryprime_elements >h2{
+  margin: 10px 10px 10px 10px;
+  font-size: 2rem;
+}
+.tryprime_elements >span{
+  margin: 10px 10px 10px 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.tryprime_elements >button{
+  margin: 10px;
+  width: 40%;
+  padding: 10px 0 10px 0;
+    background: -webkit-linear-gradient(top,#f7dfa5,#f0c14b);
+  color:black;
+  font-size: 1.3rem;
+}
+.tryprime_elements > button:hover{
+  color: white;
+}
+.tryprime_elements > p{
+  margin: 10px;
+}
+.tryprime_element1{
+  display: flex;
+  background-color: white;
+  margin: 20px;
+}
+.child1{
+  padding: 0 20px 0 20px;
+  margin-left: 120px;
+}
+.child1 >h2{
+  margin: 10px;
+}
+.child1 > strong{
+  margin: 10px;
+  font-size: 1.1rem;
+
+}
+.child1 >p{
+  margin: 10px;
+  font-size: 1.3rem
+}
+.true{
+  margin-left: 100px;
+}
+.primeimg{
+  height: 300px;
+  width: 620px;
+}
+.tryprime_btn{
+  text-align: center;
+  display: block;
+ padding: 15px 0;
+ line-height: 19px;
+ font-size: 1.2rem;
+ color: #004B91;
+ background-color:#37475A;
+}
+.tryprime_btn:hover{
+  background-color: #004B91;
+}
+.tryprime_btn > a{
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width:1024px){
+  .tryprimefirst{
+    flex-direction: column;
+  }
+  .tryprime_element1{
+    flex-direction: column;
+  }
+  .primeimg{
+    width: 500px;
+    height: 300px;
+  }
+}

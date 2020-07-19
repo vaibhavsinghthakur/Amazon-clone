@@ -1,0 +1,35 @@
+<%-include("header")-%>
+<link rel="stylesheet" href="css/basket.css">
+<div class="ads">
+  <img class="basket_img"src="https://gos3.ibcdn.com/bann-1553077574.jpg" alt="">
+  <div class="box">
+    <div>
+      <p class="basket_p">Subtotal (<%=array.length%> item):</p>
+      <p class="basket_p2">$<%=sum%></p>
+      </div>
+    <p class="p1">This Order Conatins a Gift</p>
+    <button type="button" name="button" class="basket_cornerbtn">Proceed to Checkout</button>
+  </div>
+</div>
+<div class="basket-element">
+   <h1>Shopping Cart</h1>
+   <form class="basket_form" action="/signin" method="post">
+     <button type="submit" name="button" class="basket_btn">Sign in to Your Account</button>
+   </form>
+</div>
+<p>
+  The price and availability of items at Amazon.com are subject to change. The Cart is a temporary place to store a list of your items and reflects each item's most recent price. Shopping CartLearn more
+  Do you have a gift card or promotional code? We'll ask you to enter your claim code when it's time to pay.
+</p>
+
+
+<% for(let i=array.length-1;i>=0;i--) {%>
+   <div class="basket_stuff">
+    <img src="<%=array[i].img%>" class="basket_image">
+    <div class="basket_products">
+     <p><%=array[i].p%></p>
+     <strong>$<%=array[i].price%></strong>
+     <span><%=array[i].rating%></span>
+   </div>
+  </div>
+  <% } %>

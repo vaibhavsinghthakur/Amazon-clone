@@ -1,0 +1,79 @@
+.header_logo{
+  width: 100px;
+  object-fit: contain;
+}
+.navbar{
+  background-color:#232F3E;
+  align-items: center;
+  display: flex;
+  padding-bottom: 10px;
+  position: sticky;
+  top:0;
+  z-index: 100;
+  margin-bottom: 0 !important;
+}
+.header_search{
+  margin-top: 10px;
+  display: flex;
+  flex:1;
+}
+.header_search:focus{
+  outline:2px solid orange;
+}
+.header_searchbar{
+  height:12px;
+  padding: 15px;
+  padding-top: 27px;;
+  width:100%;
+}
+.header_searchbar:focus{
+  outline:2px solid orange;
+}
+.header_nav{
+  display: flex;
+  justify-content:space-evenly;
+}
+.header_options{
+  display: flex;
+  flex-direction: column;
+  margin: 5px 10px 2px 10px;
+}
+.header_optionslineone{
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+.header_optionslinetwo{
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.searchicon{
+  background-color: orange;
+  padding: 8px;
+  padding-top: 14px;
+}
+.header_link{
+  text-decoration: none;
+  color: white;
+}
+.header_link:hover{
+  text-decoration: none;
+  color: white;
+}
+.shoppingbasket{
+  font-size: 2.5rem;
+  margin-top: 5px;
+}
+
+@media (max-width:600px)
+{
+  .navbar{
+    padding-right: 0px !important;
+  }
+  .header_options{
+    margin:5px 5px 2px 5px !important;
+  }
+  .navbar-brand{
+    margin-right: 2px;
+  }
+}

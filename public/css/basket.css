@@ -1,0 +1,108 @@
+body{
+  background-color: white;
+}
+.basket_img{
+  width: 70%;
+  max-height: 250px;
+}
+.ads{
+  margin:20px;
+  display: flex;
+}
+.box{
+  margin: 20px;
+  background-color: rgb(234,237,237);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.basket-element{
+  display:flex;
+  margin:20px;
+}
+.basket_btn{
+  margin-left: 30px;
+  max-height: 40px;
+  background-color: #f0c14b;
+  border: 0.6px solid black;
+  border-radius: 5px;
+}
+
+.basket_btn:focus{
+  outline: 2px solid orange;
+}
+.basket_form{
+  padding-top: 15px;
+}
+.basket_image{
+  width:300px;
+  height: 300px;
+}
+.basket_products{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.basket_stuff{
+  display: flex;
+  margin: 30px;
+  background-color: white;
+}
+.basket_products > p{
+  font-size: 1.4rem;
+  margin-left: -5px;
+  color: #0066c0;
+  font-weight:600;
+}
+.basket_cornerbtn{
+  object-fit: contain;
+  margin: 15px;
+  background-color: #f0c14b;
+  border-radius: 3px;
+  border-color: grey;
+}
+p{
+  margin: 20px;
+}
+.p1{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.basket_p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.basket_p2{
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-right: 5px;
+  color: #B12704;
+  margin-left: 0px;
+}
+.basket_products > span{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.basket_products >strong{
+  font-size: 1.3rem;
+  font-weight: 650;
+  color: #B12704!important;
+}
+.box > div{
+  display: flex;
+}
+@media (max-width:800px) {
+  .ads{
+    flex-direction: column;
+    margin: 20px;
+  }
+  .box{
+    width:100%;
+    margin:20px;
+    margin-left: 0;
+  }
+  .basket_img{
+    width: 100%;
+  }
+}
