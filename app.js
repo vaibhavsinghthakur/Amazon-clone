@@ -54,8 +54,11 @@ app.post("/basket",function(req,res){
    res.render("basket",{items:items,array:array,sum:sum});
 });
 
-
-app.listen(3000,function(){
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port,function(){
   console.log("server started on port 3000");
 });
 //https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2020/X-site/SingleTitle/BITS/Launch/3000x1200_Hero-Tall_np._CB410403189_.jpg
