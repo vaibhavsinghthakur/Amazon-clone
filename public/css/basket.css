@@ -92,6 +92,19 @@ p{
 .box > div{
   display: flex;
 }
+.array_btn{
+  object-fit: contain;
+  margin: 5px;
+  background: -webkit-linear-gradient(top,#f7dfa5,#f0c14b);
+  border-radius: 3px;
+  border:2px solid grey;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.array_btn:hover{
+  color: white;
+}
 @media (max-width:800px) {
   .ads{
     flex-direction: column;
@@ -104,5 +117,16 @@ p{
   }
   .basket_img{
     width: 100%;
+  }
+}
+@media (max-width:1200px){
+  .box > div{
+    flex-direction: column;
+  }
+  .basket_p2{
+    margin: 2px 10px 2px 10px ;
+  }
+  .basket_p{
+    margin: 2px 10px 2px 10px;
   }
 }
