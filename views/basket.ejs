@@ -4,7 +4,7 @@
   <img class="basket_img"src="https://gos3.ibcdn.com/bann-1553077574.jpg" alt="">
   <div class="box">
     <div>
-      <p class="basket_p">Subtotal (<%=array.length%> item):</p>
+      <p class="basket_p">Subtotal  <%=item.length%>(item):</p>
       <p class="basket_p2">$<%=sum%></p>
     </div>
     <p class="p1">This Order Conatins a Gift</p>
@@ -22,17 +22,17 @@
   Do you have a gift card or promotional code? We'll ask you to enter your claim code when it's time to pay.
 </p>
 
-
-<% for(let i=array.length-1;i>=0;i--) {%>
+<% item.reverse() %>
+<% item.forEach(function(entry){ %>
    <div class="basket_stuff">
-    <img src="<%=array[i].img%>" class="basket_image">
+   <img src="<%=entry.img%>" class="basket_image">
     <div class="basket_products">
-     <p><%=array[i].p%></p>
-     <strong>$<%=array[i].price%></strong>
-     <span><%=array[i].rating%></span>
+     <p><%=entry.p%></p>
+     <strong>$<%=entry.price%></strong>
+     <span><%=entry.rating%></span>
      <form class="" action="/delete" method="post">
-       <button type="submit" name="button" class="array_btn"value="<%=array[i].index%>">Remove from Basket</button>
+       <button type="submit" name="button" class="array_btn"value="<%=entry._id%>">Remove from Basket</button>
      </form>
    </div>
   </div>
-  <% } %>
+  <%})%>
